@@ -6,7 +6,7 @@
 
     <title>When the Storyteller Shows Up in the Story</title>
     <link rel="stylesheet" href="reveal.css">
-    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js" ></script>
 
   </head>
 
@@ -53,6 +53,26 @@
 
       <section class="multiple two">
         <div>
+          <p>Crimea: Russian vs. Ukrainian Users </p>
+
+          <div><img src="img/Crimea_RussianUsers_Blank.jpg"></div>
+          <div><img src="img/Crimea_UkrainianUsers_Blank.jpg"></div>
+
+        </div>
+      </section>
+
+
+      <section>
+        <div>
+          <p>Crimea: American Users</p>
+          <img src="img/Crimea_AmericanUsers_Blank.jpg">
+
+        </div>
+      </section>
+
+
+      <section class="multiple two">
+        <div>
           <p>Minnesota Poverty Map</p>
 
             <div><img src="img/poverty_map.jpg"></div>
@@ -73,7 +93,14 @@
       <section>
         <div>
           <p>Redlining Maps</p>
-            <div><a href="https://dsl.richmond.edu/panorama/redlining/#loc=11/40.7311/-74.0619&opacity=0.8&sort=203,99,101,95&city=manhattan-ny"><img src="img/redlining.png"></a></div>
+            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=11/40.7311/-74.0619&opacity=0.8&sort=203,99,101,95&city=manhattan-ny"><img src="img/redlining.png"></a>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Redlining Maps</p>
+            <div><a href="img/brooklyn.jpg" target="_blank"><img src="img/brooklyn.jpg"></a></div>
         </div>
       </section>
 
@@ -100,24 +127,6 @@
       </section>
 
 
-      <section class="multiple two">
-        <div>
-          <p>Crimea: Russian vs. Ukrainian Users </p>
-
-          <div><img src="img/Crimea_RussianUsers_Blank.jpg"></div>
-          <div><img src="img/Crimea_UkrainianUsers_Blank.jpg"></div>
-
-        </div>
-      </section>
-
-
-      <section>
-        <div>
-          <p>Crimea: American Users</p>
-          <img src="img/Crimea_AmericanUsers_Blank.jpg">
-
-        </div>
-      </section>
 
        <section class="sub">
         <div>
@@ -210,7 +219,7 @@
     <script>
       Reveal.initialize({
         history: true,
-        transition: Reveal.getQueryHash().transition || 'linear',
+        transition: "linear",
       });
     </script>
 
