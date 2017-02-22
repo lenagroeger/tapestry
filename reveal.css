@@ -57,11 +57,12 @@ a:hover {
 }
 
 img {
-  margin: 30px 0 30px 0;
+  margin: 30px 0px 0px 0px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   max-height: 550px;
+  max-width: 100%
 }
 
 .reveal p {
@@ -216,7 +217,12 @@ section.multiple div div {
 }
 
 section.multiple.two div div {
-  width: 50%
+  width: 48.5%;
+  margin-right: 3%
+}
+
+section.multiple.two div div:last-child {
+  margin-right: 0px
 }
 
 section.multiple.three div div {
@@ -252,15 +258,17 @@ section.multiple.three div div {
   body {
     font-size: 30px;
   }
-   img {
+
+
+}
+@media screen and (max-width: 480px) {
+
+  img {
     width: 100%;
     max-width: 300px;
     margin:10px 0px;
   }
 
-
-}
-@media screen and (max-width: 480px) {
 
 section div {
   width: 100%;
