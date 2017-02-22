@@ -34,6 +34,7 @@ a:hover {
 }
 
 
+
 .reveal p.bio {
     font-size: 25px;
     font-weight:400;
@@ -55,20 +56,12 @@ a:hover {
   line-height: 1.2em;
 }
 
-.reveal img {
-    min-width: 400px;
-    max-height: 550px;
-    max-width: 800px;
-
-}
-
-.reveal img.big-img {
-   max-width: 1100px;
-}
-
-.reveal img.small {
-  width: 300px;
-  padding-top: 40px
+img {
+  margin: 30px 0 30px 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  max-height: 550px;
 }
 
 .reveal p {
@@ -155,9 +148,6 @@ a:hover {
   background: #CC4B2B
 }
 
-.reveal .slides > section.background-img {
-  background: url("img/biaslist.svg") top left no-repeat;
-}
 
 .reveal .sub h2 {
   color:#0B1A31;
@@ -221,6 +211,17 @@ section div {
   display: inline-block;
 }
 
+section.multiple div div {
+  float: left;
+}
+
+section.multiple.two div div {
+  width: 50%
+}
+
+section.multiple.three div div {
+  width: 33%
+}
 
 .reveal h1 span {
   font-size: 40px;
@@ -229,12 +230,6 @@ section div {
   display: block;
 }
 
-.reveal section > img {
-  margin: 30px 0 30px 0;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
 
 .reveal .biaslist p {
     font-size: 21px;
@@ -257,12 +252,27 @@ section div {
   body {
     font-size: 30px;
   }
-  .reveal img {
-    width: 100%
+   img {
+    width: 100%;
+    max-width: 300px;
+    margin:10px 0px;
   }
+
+
+}
+@media screen and (max-width: 480px) {
+
+section div {
+  width: 100%;
+  max-height: none
 }
 
+ section.multiple div div {
+    width: 100% !important
+  }
 
+
+}
 
  /* LINEAR TRANSITION */
 
