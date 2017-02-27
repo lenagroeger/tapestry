@@ -28,6 +28,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #cecece;
 }
 
 a:hover {
@@ -58,15 +59,23 @@ p.bio {
   color: #CC4B2B;
 }
 
-p.bio span {
-  color:#999;
+p span {
   padding:0px 10px;
+  font-weight: 200;
 }
 
 p.subhead {
   margin-top: 10px
 }
 
+p.source {
+  font-size: 12px
+}
+
+p.quote {
+  text-align: left;
+  max-width: 850px;
+}
 
 .state-background {
   position: absolute;
@@ -115,7 +124,7 @@ h4 {
 }
 
 
-.sub h2 {
+.sub h2, .sub h1 {
   color:#0B1A31;
 }
 
